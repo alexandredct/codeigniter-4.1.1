@@ -1,0 +1,24 @@
+version: '2'
+# @see https://docs.docker.com/compose/compose-file/compose-file-v2/
+services:
+  webserver:
+    build:
+      context: ./_docker
+      dockerfile: php.Dockerfile
+    ports:
+      - "8001:80"
+    volumes:
+      - .:/var/www/html/
+  postgres:
+    build:
+      context: ./_docker
+      dockerfile: postgres.Dockerfile
+    ports:
+      - "9001:5432"
+
+  sybase:
+    build:
+      context: ./_docker
+      dockerfile: sybase.Dockerfile
+    ports:
+      - "7001:5000"
