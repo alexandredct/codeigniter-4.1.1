@@ -1,11 +1,11 @@
 {
-	"name": "codeigniter4/codeigniter4",
+	"name": "alexandredct/codeigniter-4.1.1",
 	"type": "project",
-	"description": "The CodeIgniter framework v4",
-	"homepage": "https://codeigniter.com",
+	"description": "Testing the CodeIgniter 4.1.1",
+	"homepage": "https://github.com/alexandredct",
 	"license": "MIT",
 	"require": {
-		"php": "^7.3||^8.0",
+		"php": "7.4.*",
 		"ext-curl": "*",
 		"ext-intl": "*",
 		"ext-json": "*",
@@ -55,8 +55,6 @@
 		"test": "phpunit"
 	},
 	"support": {
-		"forum": "http://forum.codeigniter.com/",
-		"source": "https://github.com/codeigniter4/CodeIgniter4",
-		"slack": "https://codeigniterchat.slack.com"
+		"email": "alexandredct@gmail.com"
 	}
 }

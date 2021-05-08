@@ -2,6 +2,11 @@ FROM datagrip/sybase:16.0
 
 LABEL maintainer="alexandre.trindade@uerj.br"
 
+# Ajuste de timezone para Sao_Paulo
+RUN yum update -y tzdata
+RUN rm /etc/localtime
+RUN ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+
 # Diretório onde irá ser criada o db_bm
 RUN mkdir /sybase-data
 RUN chmod -R 777 /sybase-data
